@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>demo-ecommerce-blog</title>
+  <meta name="viewport" content="width=devie-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+  <div id="header">
+    <div class="container-fluid header-top">
+      <div class="container d-flex justify-content-between">
+        <div class="header-top-left d-flex align-items-center">
+          <h6>Ngôn ngữ</h6>
+          <div class="dropdown">
+            <a class="dropbtn">Anh<i class="fa-solid fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Pháp</a>
+              <a href="#">Trung Quốc</a>
+              <a href="#">Bồ Đào Nha</a>
+            </div>
+          </div>
+        </div>
+        <ul class="header-top-right d-flex">
+          <ul class="phone d-flex">
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><a href="#">0123.456.789</a></li>
+          </ul>
+          <ul class="mail d-flex">
+            <li><i class="fa-solid fa-envelope"></i></li>
+            <li><a href="#">support@example.com</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="container top-nav">
+      <div class="row d-flex align-items-center">
+        <div class="col-3 d-flex" id="logo">
+          <img src="./img/logo-b_1 1.png" alt="" />
+          <p>IRENE</p>
+        </div>
+        <div class="col-6 p-0 nav-search">
+          <ul class="d-flex m-0 position-relative">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Danh mục
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Điện thoại, Tablets</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
+                  <li><a class="dropdown-item" href="#">Máy ảnh</a></li>
+                  <li><a class="dropdown-item" href="#">Âm thanh</a></li>
+                  <li><a class="dropdown-item" href="#">Tivi</a></li>
+                  <li><a class="dropdown-item" href="#">PC, Màn hình</a></li>
+                  <li><a class="dropdown-item" href="#">Gia dụng</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><span>|</span></li>
+            <li><input type="text" placeholder="Bạn tìm gì..." /></li>
+            <li class="btn position-absolute">
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 nav-right-t d-flex">
+          <ul class="d-flex h-full justify-end items-center">
+            <li class="login">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                  class="fa-solid fa-unlock-keyhole"></i>
+              </button>
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <label class="d-flex">Username or email address</label>
+                        <input class="w3-input w3-border" name="first" type="text">
+                      </div>
+                      <div>
+                        <label class="d-flex">Password </label>
+                        <input class="w3-input w3-border" name="first" type="text">
+                      </div>
+                      <div class="w3-check">
+                        <input type="checkbox" checked="checked">
+                        <label> Remember me </label></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="w-100">Sign In</button>
+                      <ul class="d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-solid fa-key"></i>Lost your password?</a></li>
+                        <li><a href="#"><i class="fa-regular fa-user"></i>Create an account</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="heart">
+              <i class="fa-regular fa-heart"></i>
+              <div class="tag">2</div>
+            </li>
+            <li class="shoppin">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <div class="tag">2</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="navbar container">
+      <div class="row align-items-center">
+        <div class="col-3 navbar-left">
+          <div class="dropdown d-flex align-items-center justify-content-between w-100">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bars"></i>
+              <p>Toàn bộ sản phẩm</p>
+            </div>
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="dropdown-content">
+              <ul>
+                <li><a class="item" href="#"><img src="img/hot-sale.png" alt="">Khuyến mại</a></li>
+                <li> <a class="item" href="#"><img src="img/badge.png" alt="">Top bán chạy</a></li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Điện thoại & Tablets</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="bg-item-tablets">
+                      <div class="d-flex">
+                        <ul class="col-6">
+                          <li class="title">Điện thoại</li>
+                          <li><a href="#">Điện thoại Android</a></li>
+                          <li><a href="#">Điện thoại iPhone</a></li>
+                          <li><a href="#">Điện thoại Windows</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện điện thoại</li>
+                            <li><a href="#">Ốp điện thoại</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="col-6">
+                          <li class="title">Tablets</li>
+                          <li><a href="#">Tablets Android</a></li>
+                          <li><a href="#">iPad</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện Tablets</li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Laptop</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="d-flex item-laptop">
+                      <ul class="col-6">
+                        <li class="title">Laptop</li>
+                        <li class="sub-title">Kích thước màn hình</li>
+                        <li><a href="#">Laptop 12 inch</a></li>
+                        <li><a href="#">Laptop 13 inch</a></li>
+                        <li><a href="#">Laptop 14 inch</a></li>
+                        <li><a href="#">Laptop 15.6 inch</a></li>
+                        <li><a href="#">Laptop 16 inch</a></li>
+                        <ul class="sub">
+                          <li class="sub-title">Loại chip</li>
+                          <li><a href="#">Laptop core i3</a></li>
+                          <li><a href="#">Laptop core i5</a></li>
+                          <li><a href="#">Laptop core i7</a></li>
+                          <li><a href="#">Laptop core i9</a></li>
+
+                        </ul>
+                      </ul>
+                      <ul class="col-6 bg-item-laptop position-relative">
+                        <div class="content position-absolute">
+                          <p>Sắp ra mắt</p>
+                          <h5>MacBook pro<br> 17 inch</h5>
+                          <button id="button">mua ngay</button>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li><a class="item" href="#"><img src="img/laptop.png" alt="">Laptop</a></li> -->
+                <li><a class="item" href="#"><img src="img/smartwatch.png" alt="">Đồng hồ</a></li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Máy ảnh</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="bg-item-camera">
+                      <div class="d-flex">
+                        <ul class="col-6">
+                          <li class="title">Điện thoại</li>
+                          <li><a href="#">Điện thoại Android</a></li>
+                          <li><a href="#">Điện thoại iPhone</a></li>
+                          <li><a href="#">Điện thoại Windows</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện điện thoại</li>
+                            <li><a href="#">Ốp điện thoại</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="col-6">
+                          <li class="title">Tablets</li>
+                          <li><a href="#">Tablets Android</a></li>
+                          <li><a href="#">iPad</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện Tablets</li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li><a class="item" href="#"><img src="img/camera.png" alt="">Máy ảnh</a></li> -->
+                <li><a class="item" href="#"><img src="img/headphones.png" alt="">Âm thanh</a></li>
+                <li><a class="item" href="#"><img src="img/television.png" alt="">Tivi</a></li>
+                <li><a class="item" href="#"><img src="img/computer.png" alt="">PC, Màn hình</a></li>
+                <li><a class="item" href="#"><img src="img/home-appliance.png" alt="">Gia dụng</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-3 navbar-link">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="d-flex" id="logo">
+                  <img src="./img/logo-b_1 1.png" alt="">
+                  <p>IRENE</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body justify-content-center">
+                <div class="nav-search">
+                  <ul class="d-flex m-0 position-relative">
+                    <li><input type="text" placeholder="Bạn tìm gì..."></li>
+                    <li class="btn position-absolute">
+                      <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="./index.html" class="nav-link ">Trang chủ</a></li>
+                    <li class="nav-item"><a href="./shop.html" class="nav-link active">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link ">Blogs</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link ">Giới thiệu</a></li>
+                  </ul>
+                  <div class="header-mobile-bottom">
+                    <aside class="widget_block">
+                      <div>
+                        <img src="img/sale.png" alt="">
+                        <strong>HOTLINE <span class="text-theme">(2003) 1818 1111</span></strong>
+                      </div>
+                    </aside>
+                    <aside class="widget_block-2">
+                      <p>18 Đ. Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
+                    </aside>
+                    <aside class="widget_goal_socials_widget">
+                      <div class="social-footer col-lg-4 col-12 my-2 order-lg-3 order-2 d-flex justify-content-end">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </div>
+                    </aside>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-6 d-flex" id="logo">
+          <img src="./img/logo-b_1 1.png" alt="">
+          <p>IRENE</p>
+        </div>
+        <div class="col-3 nav-right-t d-flex">
+          <div class="d-flex login justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-unlock-keyhole"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <label class="d-flex">Username or email address</label>
+                      <input class="w3-input w3-border" name="first" type="text">
+                    </div>
+                    <div>
+                      <label class="d-flex">Password </label>
+                      <input class="w3-input w3-border" name="first" type="text">
+                    </div>
+                    <div class="w3-check">
+                      <input type="checkbox" checked="checked">
+                      <label> Remember me </label>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="w-100">Sign In</button>
+                    <ul class="d-flex justify-content-center">
+                      <li><a href="#"><i class="fa-solid fa-key"></i>Lost your password?</a></li>
+                      <li><a href="#"><i class="fa-regular fa-user"></i>Create an account</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex navbar-right">
+          <img src="img/discount.png" alt="">
+          <p>Giảm giá 50% tất cả sản phẩm</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-hero-header">
+      <div class="container hero-header">
+        <div class="row">
+          <h1></h1>
+          <ul class="d-flex align-items-center p-0">
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li><i class="fa-solid fa-angle-right"></i></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><i class="fa-solid fa-angle-right"></i></li>
+            <li><a class="active" href="#">Đồng hồ thông minh Realme Watch 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container product-details">
+    <div class="row">
+      <div class="col-lg-6 col-12 product-details-img">
+        <div id="carouselExampleIndicators" class="carousel slide d-flex">
+          <div class="carousel-indicators slick-track">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active img-1"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="img-2"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="img-3"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="img-4"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active details-prod-img">
+              <img src="img/p-03.jpeg" alt="" class="w-100 img"
+                style="transform-origin: center center; transform: scale(1);">
+            </div>
+            <div class="carousel-item details-prod-img">
+              <img src="img/p-03-2.jpeg" alt="" class="w-100 img">
+            </div>
+            <div class="carousel-item details-prod-img">
+              <img src="img/p-03-3.jpeg" alt="" class="w-100 img">
+            </div>
+            <div class="carousel-item details-prod-img">
+              <img src="img/p-03-4.jpeg" alt="" class="w-100 img">
+            </div>
+          </div>
+          <!-- <button class="pr-details carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="pr-details carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 product-details-content">
+        <div class="row">
+          <h1 class="title">Đồng hồ thông minh Realme Watch 2</h1>
+          <h4>$115.00 – $211.00</h4>
+          <div class="line"></div>
+          <ul class="advantage">
+            <li>Thiết kế tinh tế, nhỏ gọn</li>
+            <li>Hỗ trợ nhiều tính năng khác nhau</li>
+            <li>Kết nối ổn định và nhanh chóng</li>
+          </ul>
+          <div class="line"></div>
+          <div class="d-flex cart">
+            <div class="qty">
+              <button id="btn-minus"><i class="fa-solid fa-minus"></i></button>
+              <input type="number" value="1" id="i-qty">
+              <button id="btn-plus"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <button class="add">Thêm vào giỏ hàng</button>
+          </div>
+          <div class="wishlist d-flex"><i class="fa-solid fa-heart"></i>
+            <p class="m-0 ms-1">Thêm vào danh sách yêu thích</p>
+          </div>
+          <div class="line"></div>
+          <div class="p-0">
+            <ul class="pr-meta d-flex">
+              <ul class="sub-title">
+                <li>Mã sản phẩm: <span>MF841HN/A</span></li>
+                <li>DANH MỤC: <span>Đồng hồ, PC & Laptop, Smartwatches</span></li>
+                <li>CHIA SẺ: <span><a href="#" data-toggle="tooltip" aria-label="Share on facebook"
+                      data-bs-original-title="Share on facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" data-toggle="tooltip" aria-label="Share on Twitter"
+                      data-bs-original-title="Share on Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" data-toggle="tooltip" aria-label="Share on LinkedIn"
+                      data-bs-original-title="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" data-toggle="tooltip" aria-label="Share on Tumblr"
+                      data-bs-original-title="Share on Tumblr"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" data-toggle="tooltip" aria-label="Share on Pinterest"
+                      data-bs-original-title="Share on Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></span>
+                </li>
+              </ul>
+            </ul>
+            <ul class="shiping d-flex">
+              <li class="title-1">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#title-1">
+                  THỜI GIAN VẬN CHUYỂN
+                </button>
+                <div class="modal fade" id="title-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">THỜI GIAN VẬN CHUYỂN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <th class="title">
+                                Giao hàng tiêu chuẩn
+                              </th>
+                              <th class="value">
+                                Giao hàng trong vòng 3-5 ngày làm việc
+                              </th>
+                            </tr>
+                            <tr>
+                              <th class="title">
+                                Chuyển phát nhanh (Bưu kiện tiêu chuẩn)
+                              </th>
+                              <th class="value">
+                                Giao hàng trong vòng 1-2 ngày làm việc
+                              </th>
+                            </tr>
+                            <tr>
+                              <th class="title">
+                                Bưu kiện cực lớn
+                              </th>
+                              <th class="value">
+                                Giao hàng trong vòng 3-5 ngày làm việc
+                              </th>
+                            </tr>
+                            <tr>
+                              <th class="title">
+                                Thời gian
+                              </th>
+                              <th class="value">
+                                Việc giao hàng thường diễn ra trong vòng 2 tuần.
+                              </th>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="title-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#title-2">
+                  THÔNG TIN VẬN CHUYỂN
+                </button>
+                <div class="modal fade" id="title-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">THÔNG TIN VẬN CHUYỂN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h4>Free Shipping</h4>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti maiores consequuntur
+                          soluta quis perferendis sit, ratione aperiam ducimus dolor error nisi mollitia! Debitis,
+                          soluta. Veniam eos reprehenderit voluptatum quo inventore!</p>
+                        <h4>Drop Shipping</h4>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magni, porro repellat, iure
+                          officia laudantium vero dolor sunt non nisi harum, beatae voluptatibus tenetur eos deserunt
+                          temporibus necessitatibus. In, sapiente.audantium vero dolor sunt non nisi harum, beatae
+                          voluptatibus tenetur eos deserunt
+                          temporibus necessitatibus. In, sapiente.</p>
+                        <h4>Ground Shipping</h4>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consectetur suscipit
+                          nostrum et laboriosam autem quod tenetur dolorum, impedit dicta aspernatur sequi rerum at
+                          explicabo. A natus veritatis impedit quis?Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. <br>Blanditiis consectetur suscipit
+                          nostrum et laboriosam autem quod tenetur dolorum, impedit dicta aspernatur sequi rerum at
+                          explicabo. A natus veritatis impedit quis?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="title-3">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#title-3">
+                  CAM KẾT
+                </button>
+                <div class="modal fade" id="title-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">CAM KẾT</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>We speak a lot about the importance of gut health—not only for beauty—but also in terms of
+                          our overall health, wellbeing and immunity. But before we can fully understand why the gut is
+                          so integral to our health, it’s first essential to learn more about the physiology of the gut
+                          itself—and how it works.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container description mt-5 pt-3">
+    <div class="col-12 tabs-btn">
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item" role="presentation"><a class="nav-link" href="#description" data-bs-toggle="tab"
+            aria-selected="false" role="tab" tabindex="-1">ĐẶC ĐIỂM NỔI BẬT</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" href="#infor" data-bs-toggle="tab"
+            aria-selected="false" role="tab" tabindex="-1">Thông số kỹ thuật</a>
+        </li>
+        <li class="nav-item" role="presentation"><a class="nav-link active" href="#reciew" data-bs-toggle="tab"
+            aria-selected="true" role="tab">Đánh giá (1)</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane" id="description" role="tabpanel">
+          <div class="row">
+            <div class="col-12 content">
+              <h1>ĐIỂM NỔI BẬT</h1>
+              <p>Specifically, on Upholstery items, the price includes the standard fabric according the grade
+                specified;
+                In
+                case a different fabric from one of the brands from Caffe Latte is required, or COM/COL option, Standard
+                packaging is included packaging is included </p>
+              <p>Fabric quantity requirements are based on a standard width of 1,40cm / 55” for plain fabrics. If the
+                customer
+                fabric has a different width or contains a pattern, Caffe Latte must be notified in order to inform the
+                customer
+                of the exact required fabric quantity. If the pattern requires matching, Caffe Latte needs to know the
+                repeat
+                dimensions for a calculation of additional yardage/meters required and/or additional charge for
+                matching;
+                5.
+                Standard packaging is included </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane" id="infor" role="tabpanel">
+          <div class="row">
+            <div class="content">
+              <h1>Thông số kỹ thuật</h1>
+              <table>
+                <tbody>
+                  <tr>
+                    <th class="title">
+                      Thương hiệu
+                    </th>
+                    <th class="value">Sony</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Kích thước màn hình
+                    </th>
+                    <th class="value">5 inch</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Độ phân giải màn hình
+                    </th>
+                    <th class="value">1366x768 pixel</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Công nghệ hiển thị
+                    </th>
+                    <th class="value">LED</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Dung lượng ổ cứng
+                    </th>
+                    <th class="value">128 GB</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Hệ điều hành
+                    </th>
+                    <th class="value">Mac OS X</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Khả năng tương thích không dây
+                    </th>
+                    <th class="value">802.11abg, 802.11 A/C, 802.11 a/b/g/n, 802.11A</th>
+                  </tr>
+                  <tr>
+                    <th class="title">
+                      Mã sản phẩm
+                    </th>
+                    <th class="value">MF841HN/A</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane active show" id="reciew" role="tabpanel">
+          <div class="row">
+            <div class="content">
+              <h1>Đánh giá (1)</h1>
+              <p class="d-none">Hiện tại không có đánh giá nào.</p>
+              <div class="reciew-form">
+                <div class="load-item review-use">
+                  <div class="info d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <div class="avt">
+                        <img class="w-100" src="img/testimonial-02-1-120x120_left.jpeg" alt="">
+                      </div>
+                      <div class="name">JANE STARK</div>
+                    </div>
+                    <h6 class="time">12/1/2023 13:30</h6>
+                  </div>
+                  <div class="review">
+                    <p>Đánh giá:
+                      <span class="star-rating">
+                        <i class="active fa-solid fa-star"></i>
+                        <i class="active fa-solid fa-star"></i>
+                        <i class="active fa-solid fa-star"></i>
+                        <i class="active fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                    </p>
+                    <p>Phân loại:<span>đen</span></p>
+                    <p>Chất lượng sản phẩm:<span>tốt</span></p>
+                    <p>Đánh giá:<span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusantium
+                        voluptatum, sed ullam iste odit libero vero aspernatur illum. Id sed natus alias debitis nihil
+                        dolor aperiam quis nisi fuga.</span></p>
+                    <ul class="d-flex">
+                      <li class="img">
+                        <div class="content" data-bs-toggle="modal" data-bs-target="#img-1"
+                          style="background-image: url(img/dong-ho-thong-minh-duoi-2-trieu-dong-cua-realme-co-gi-1.jpeg);">
+                        </div>
+                        <div class="modal fade" id="img-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true" style="display: none;">
+                          <div class="modal-dialog modal-dialog-centered overflow-hidden">
+                            <img class="w-100" src="img/dong-ho-thong-minh-duoi-2-trieu-dong-cua-realme-co-gi-1.jpeg"
+                              alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="img">
+                        <div class="content" data-bs-toggle="modal" data-bs-target="#img-2"
+                          style="background-image: url(img/realme-watch-2-pro-gadgetmatch-20210713-01-1000x600.jpeg);">
+                        </div>
+                        <div class="modal fade" id="img-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true" style="display: none;">
+                          <div class="modal-dialog modal-dialog-centered overflow-hidden">
+                            <img class="w-100" src="img/realme-watch-2-pro-gadgetmatch-20210713-01-1000x600.jpeg"
+                              alt="">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="img">
+                        <div class="content" data-bs-toggle="modal" data-bs-target="#img-3"
+                          style="background-image: url(img/Montre-connectee-Realme-Watch-2-Pro-noir.jpeg);">
+                        </div>
+                        <div class="modal fade" id="img-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true" style="display: none;">
+                          <div class="modal-dialog modal-dialog-centered overflow-hidden">
+                            <img class="w-100" src="img/Montre-connectee-Realme-Watch-2-Pro-noir.jpeg" alt="">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <a href="#" id="loadMore" data-init-records="2" data-records-per-page="2">Xem thêm</a>
+                <h1 class="d-none">Hãy là người đầu tiên đánh giá “Realme Watch 2 Smart Watch 2” </h1>
+                <h1>Thêm một bài đánh giá</h1>
+                <input class="d-flex" type="text" placeholder="Họ tên*">
+                <input type="email" placeholder="Email*">
+                <div class="w3-check">
+                  <input type="checkbox" checked="checked">
+                  <label>Lưu tên và email của tôi trong trình duyệt này cho lần đánh giá tiếp theo. </label>
+                </div>
+                <textarea type="text" placeholder="Đánh giá của bạn"></textarea>
+                <button class="d-flex align-items-center" id="button">Đăng<img src="img/paper-plane.png"
+                    alt=""></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-footer-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-12 my-2 order-1">
+          <div class="email d-flex align-items-center">
+            <img src="img/email.png" alt="" />
+            <div class="content ms-2">
+              <h1>Theo dõi bản tin</h1>
+              <p>Nhận các ưu đãi, cập nhật mới nhất</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12 my-2 order-lg-2 order-3">
+          <div class="input d-flex">
+            <input type="text" placeholder="nhập email của bạn" />
+            <button id="button">Đăng ký</button>
+          </div>
+        </div>
+        <div class="social-footer col-lg-3 col-12 my-2 order-lg-3 order-2 d-flex justify-content-end">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid d-flex bg-footer">
+    <div class="container footer">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 info">
+          <div class="d-flex" id="logo">
+            <img src="./img/logo-b_1 1.png" alt="">
+            <p>IRENE</p>
+          </div>
+          <ul class="mt-3">
+            <li class="mb-2">
+              <a class="email">support@example.com</a>
+            </li>
+            <li>
+              <a class="phone">+ (2003) 1818 1111</a>
+            </li>
+          </ul>
+          <p>18 Đ. Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
+          <img src="img/pay.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 account">
+          <span>Thông tin và chính sách</span>
+          <ul class="mt-3">
+            <li>
+              <a href="#">Liên hệ</a>
+            </li>
+            <li>
+              <a href="#">Thông tin tài khoản</a>
+            </li>
+            <li>
+              <a href="#">Tra cứu hoá đơn điện tử</a>
+            </li>
+            <li>
+              <a href="#">Tra cứu đơn hàng</a>
+            </li>
+            <li>
+              <a href="#">Thông tin vận chuyển</a>
+            </li>
+            <li>
+              <a href="#">Chính sách giao hàng</a>
+            </li>
+            <li>
+              <a href="#">Câu hỏi thường gặp</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 our-services">
+          <span>Dịch vụ</span>
+          <ul class="mt-3">
+            <li>
+              <a href="#">Chi nhánh</a>
+            </li>
+            <li>
+              <a href="#">Mua hàng và thanh toán Online</a>
+            </li>
+            <li>
+              <a href="#">Mua hàng trả góp Online</a>
+            </li>
+            <li>
+              <a href="#">Dịch vụ bảo hành</a>
+            </li>
+            <li>
+              <a href="#">Ưu đãi thanh toán</a>
+            </li>
+            <li>
+              <a href="#">Vận chuyển & Trả hàng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 Download">
+          <span>Tải ứng dụng</span>
+          <p class="mt-3">
+            Ứng dụng hiện đã có trên Google Play & App Store. Tải về ngay.
+          </p>
+          <ul class="d-flex mt-4 img-app">
+            <li><img src="img/app-01.png" alt="" /></li>
+            <li><img src="img/app-02.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="copyright">
+    Copyright © 2023 Irene – All Rights Reserved.
+  </div>
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/style.js"></script>
+</body>
+
+</html>

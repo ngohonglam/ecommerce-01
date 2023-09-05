@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>demo-ecommerce-blog</title>
+  <meta name="viewport" content="width=devie-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+  <div id="header">
+    <div class="container-fluid header-top">
+      <div class="container d-flex justify-content-between">
+        <div class="header-top-left d-flex align-items-center">
+          <h6>Ngôn ngữ</h6>
+          <div class="dropdown">
+            <a class="dropbtn">Anh<i class="fa-solid fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Pháp</a>
+              <a href="#">Trung Quốc</a>
+              <a href="#">Bồ Đào Nha</a>
+            </div>
+          </div>
+        </div>
+        <ul class="header-top-right d-flex">
+          <ul class="phone d-flex">
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><a href="#">0123.456.789</a></li>
+          </ul>
+          <ul class="mail d-flex">
+            <li><i class="fa-solid fa-envelope"></i></li>
+            <li><a href="#">support@example.com</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="container top-nav">
+      <div class="row d-flex align-items-center">
+        <div class="col-3 d-flex" id="logo">
+          <img src="./img/logo-b_1 1.png" alt="" />
+          <p>IRENE</p>
+        </div>
+        <div class="col-6 p-0 nav-search">
+          <ul class="d-flex m-0 position-relative">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Danh mục
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Điện thoại, Tablets</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
+                  <li><a class="dropdown-item" href="#">Máy ảnh</a></li>
+                  <li><a class="dropdown-item" href="#">Âm thanh</a></li>
+                  <li><a class="dropdown-item" href="#">Tivi</a></li>
+                  <li><a class="dropdown-item" href="#">PC, Màn hình</a></li>
+                  <li><a class="dropdown-item" href="#">Gia dụng</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><span>|</span></li>
+            <li><input type="text" placeholder="Bạn tìm gì..." /></li>
+            <li class="btn position-absolute">
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 nav-right-t d-flex">
+          <ul class="d-flex h-full justify-end items-center">
+            <li class="login">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                  class="fa-solid fa-unlock-keyhole"></i>
+              </button>
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <label class="d-flex">Username or email address</label>
+                        <input class="w3-input w3-border" name="first" type="text">
+                      </div>
+                      <div>
+                        <label class="d-flex">Password </label>
+                        <input class="w3-input w3-border" name="first" type="text">
+                      </div>
+                      <div class="w3-check">
+                        <input type="checkbox" checked="checked">
+                        <label> Remember me </label></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="w-100">Sign In</button>
+                      <ul class="d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-solid fa-key"></i>Lost your password?</a></li>
+                        <li><a href="#"><i class="fa-regular fa-user"></i>Create an account</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="heart">
+              <i class="fa-regular fa-heart"></i>
+              <div class="tag">2</div>
+            </li>
+            <li class="shoppin">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <div class="tag">2</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="navbar container">
+      <div class="row align-items-center">
+        <div class="col-3 navbar-left">
+          <div class="dropdown d-flex align-items-center justify-content-between w-100">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bars"></i>
+              <p>Toàn bộ sản phẩm</p>
+            </div>
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="dropdown-content">
+              <ul>
+                <li><a class="item" href="#"><img src="img/hot-sale.png" alt="">Khuyến mại</a></li>
+                <li> <a class="item" href="#"><img src="img/badge.png" alt="">Top bán chạy</a></li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Điện thoại & Tablets</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="bg-item-tablets">
+                      <div class="d-flex">
+                        <ul class="col-6">
+                          <li class="title">Điện thoại</li>
+                          <li><a href="#">Điện thoại Android</a></li>
+                          <li><a href="#">Điện thoại iPhone</a></li>
+                          <li><a href="#">Điện thoại Windows</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện điện thoại</li>
+                            <li><a href="#">Ốp điện thoại</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="col-6">
+                          <li class="title">Tablets</li>
+                          <li><a href="#">Tablets Android</a></li>
+                          <li><a href="#">iPad</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện Tablets</li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Laptop</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="d-flex item-laptop">
+                      <ul class="col-6">
+                        <li class="title">Laptop</li>
+                        <li class="sub-title">Kích thước màn hình</li>
+                        <li><a href="#">Laptop 12 inch</a></li>
+                        <li><a href="#">Laptop 13 inch</a></li>
+                        <li><a href="#">Laptop 14 inch</a></li>
+                        <li><a href="#">Laptop 15.6 inch</a></li>
+                        <li><a href="#">Laptop 16 inch</a></li>
+                        <ul class="sub">
+                          <li class="sub-title">Loại chip</li>
+                          <li><a href="#">Laptop core i3</a></li>
+                          <li><a href="#">Laptop core i5</a></li>
+                          <li><a href="#">Laptop core i7</a></li>
+                          <li><a href="#">Laptop core i9</a></li>
+
+                        </ul>
+                      </ul>
+                      <ul class="col-6 bg-item-laptop position-relative">
+                        <div class="content position-absolute">
+                          <p>Sắp ra mắt</p>
+                          <h5>MacBook pro<br> 17 inch</h5>
+                          <button id="button">mua ngay</button>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li><a class="item" href="#"><img src="img/laptop.png" alt="">Laptop</a></li> -->
+                <li><a class="item" href="#"><img src="img/smartwatch.png" alt="">Đồng hồ</a></li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Máy ảnh</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="bg-item-camera">
+                      <div class="d-flex">
+                        <ul class="col-6">
+                          <li class="title">Điện thoại</li>
+                          <li><a href="#">Điện thoại Android</a></li>
+                          <li><a href="#">Điện thoại iPhone</a></li>
+                          <li><a href="#">Điện thoại Windows</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện điện thoại</li>
+                            <li><a href="#">Ốp điện thoại</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="col-6">
+                          <li class="title">Tablets</li>
+                          <li><a href="#">Tablets Android</a></li>
+                          <li><a href="#">iPad</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện Tablets</li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li><a class="item" href="#"><img src="img/camera.png" alt="">Máy ảnh</a></li> -->
+                <li><a class="item" href="#"><img src="img/headphones.png" alt="">Âm thanh</a></li>
+                <li><a class="item" href="#"><img src="img/television.png" alt="">Tivi</a></li>
+                <li><a class="item" href="#"><img src="img/computer.png" alt="">PC, Màn hình</a></li>
+                <li><a class="item" href="#"><img src="img/home-appliance.png" alt="">Gia dụng</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-3 navbar-link">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="d-flex" id="logo">
+                  <img src="./img/logo-b_1 1.png" alt="">
+                  <p>IRENE</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body justify-content-center">
+                <div class="nav-search">
+                  <ul class="d-flex m-0 position-relative">
+                    <li><input type="text" placeholder="Bạn tìm gì..."></li>
+                    <li class="btn position-absolute">
+                      <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="./index.html" class="nav-link ">Trang chủ</a></li>
+                    <li class="nav-item"><a href="./shop.html" class="nav-link ">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link ">Blogs</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link active">Giới thiệu</a></li>
+                  </ul>
+                  <div class="header-mobile-bottom">
+                    <aside class="widget_block">
+                      <div>
+                        <img src="img/sale.png" alt="">
+                        <strong>HOTLINE <span class="text-theme">(2003) 1818 1111</span></strong>
+                      </div>
+                    </aside>
+                    <aside class="widget_block-2">
+                      <p>18 Đ. Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
+                    </aside>
+                    <aside class="widget_goal_socials_widget">
+                      <div class="social-footer col-lg-4 col-12 my-2 order-lg-3 order-2 d-flex justify-content-end">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </div>
+                    </aside>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-6 d-flex" id="logo">
+          <img src="./img/logo-b_1 1.png" alt="">
+          <p>IRENE</p>
+        </div>
+        <div class="col-3 nav-right-t d-flex">
+          <div class="d-flex login justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-unlock-keyhole"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <label class="d-flex">Username or email address</label>
+                      <input class="w3-input w3-border" name="first" type="text">
+                    </div>
+                    <div>
+                      <label class="d-flex">Password </label>
+                      <input class="w3-input w3-border" name="first" type="text">
+                    </div>
+                    <div class="w3-check">
+                      <input type="checkbox" checked="checked">
+                      <label> Remember me </label>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="w-100">Sign In</button>
+                    <ul class="d-flex justify-content-center">
+                      <li><a href="#"><i class="fa-solid fa-key"></i>Lost your password?</a></li>
+                      <li><a href="#"><i class="fa-regular fa-user"></i>Create an account</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex navbar-right">
+          <img src="img/discount.png" alt="">
+          <p>Giảm giá 50% tất cả sản phẩm</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-hero-header">
+      <div class="container hero-header">
+        <div class="row">
+          <h1>Giới Thiệu</h1>
+          <ul class="d-flex align-items-center p-0">
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li><i class="fa-solid fa-angle-right"></i></li>
+            <li><a class="active" href="#">Giới Thiệu</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about container py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 content-left order-lg-1 order-2">
+        <img class="w-100" src="./img/hinh-anh-harry-porter-va-ban-than_075948218.jpeg" alt="">
+      </div>
+      <div class="col-lg-6 content-right order-lg-2 order-1">
+        <div class="title mb-3">
+          <h6>Giới Thiệu</h6>
+          <h1>Xin chào, <br> Với 25+ năm kinh nghiệm</h1>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae aliquam maiores Lorem ipsum dolor</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequuntur fugit, doloribus obcaecati
+          molestias ullam. Cum, nesciunt ad hic tempore beatae voluptatibus distinctio</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequuntur fugit, doloribus obcaecati
+          molestias ullam. Cum, nesciunt ad hic tempore beatae voluptatibus distinctio</p>
+      </div>
+    </div>
+  </div>
+  <div class="different container py-5">
+    <div class="row">
+      <div class="title mb-3">
+        <h1>Điều gì khiến chúng tôi khác biệt</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta explicabo sequi asperiores, veniam
+        dolorem, id dolore sit, aperiam eveniet ipsa. Repellendus doloribus blanditiis sunt inventore neque Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Veniam earum consectetur quasi fugiat ab voluptas dicta. Cumque
+        nulla eaque blanditiis incidunt ex, saepe reiciendis vel quod quos optio possimus dolor.</p>
+      <div class="col-12">
+        <div class="img mt-4 mb-5">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="item">
+          <div class="icon">
+            <img src="./img/server.png" alt="">
+          </div>
+          <h2>Tầm nhìn của chúng tôi</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur dolor sit adipisicing elit. Deleniti sunt, temporibus cum
+            provident rerum
+            officia</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="item">
+          <div class="icon">
+            <img src="./img/Group 59.png" alt="">
+          </div>
+          <h2>Lịch sử khởi đầu</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur dolor sit adipisicing elit. Deleniti sunt, temporibus cum
+            provident rerum
+            officia</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="item">
+          <div class="icon">
+            <img src="./img/Group 60.png" alt="">
+          </div>
+          <h2>Nhiệm vụ của chúng tôi</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur dolor sit adipisicing elit. Deleniti sunt, temporibus cum
+            provident rerum
+            officia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid stats position-relative overflow-hidden mt-5">
+    <div class="row">
+      <div id="particles-js">
+        <div class="bg-particles position-absolute"></div>
+      </div>
+      <div class="container content position-absolute mt-5 pt-5">
+        <div class="row">
+          <div class="title mb-5 pb-3">
+            <h6>thống kê</h6>
+            <h1>Hiểu thêm về chúng tôi qua các con số</h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 item">
+            <div class="number d-flex">
+              <h2 class="counter" data-to="500" data-speed="2000"></h2>
+              <p>+</p>
+            </div>
+            <h5>Đơn hàng đã hoàn thành</h5>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 item">
+            <div class="number d-flex">
+              <h2 class="counter" data-to="100" data-speed="2000"></h2>
+              <p>%</p>
+            </div>
+            <h5>Phản hồi trong vòng 2 tiếng</h5>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 item">
+            <div class="number d-flex">
+              <h2 class="counter" data-to="98" data-speed="2000"></h2>
+              <p>%</p>
+            </div>
+            <h5>Khách hàng hài lòng</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid testimonial bg-body py-5">
+    <div class="container">
+      <div class="row">
+        <div class="testimonial-user">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="item d-flex w-100 justify-content-center">
+                  <div class="user">
+                    <img src="img/testimonial-02-1-120x120_left.jpeg" alt="">
+                    <h1>Martha Griffin</h1>
+                    <p>Web Developer</p>
+                  </div>
+                  <div class="cmt">
+                    <h1>Thiết kế tuyệt vời!</h1>
+                    <div class="star-rating">
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                    </div>
+                    <p class="mt-3">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ipsam repellendus
+                      excepturi<br>
+                      voluptatibus quaerat nisi doloremque debitis "
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="item d-flex w-100 justify-content-center">
+                  <div class="user">
+                    <img src="img/testimonial-03-1-120x120_left.jpeg" alt="">
+                    <h1>Martha Griffin</h1>
+                    <p>Web Developer</p>
+                  </div>
+                  <div class="cmt">
+                    <h1>Thiết kế tuyệt vời!</h1>
+                    <div class="star-rating">
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                    </div>
+                    <p class="mt-3">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ipsam repellendus
+                      excepturi<br>
+                      voluptatibus quaerat nisi doloremque debitis "
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="item d-flex w-100 justify-content-center">
+                  <div class="user">
+                    <img src="img/avt-02.jpeg" alt="">
+                    <h1>Martha Griffin</h1>
+                    <p>Web Developer</p>
+                  </div>
+                  <div class="cmt">
+                    <h1>Thiết kế tuyệt vời!</h1>
+                    <div class="star-rating">
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                      <i class="active fa-solid fa-star"></i>
+                    </div>
+                    <p class="mt-3">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, ipsam repellendus
+                      excepturi<br>
+                      voluptatibus quaerat nisi doloremque debitis "
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="team container py-5 my-5">
+    <div class="row">
+      <div class="title mb-5 d-flex justify-content-center">
+        <h1>Đội ngũ của chúng tôi</h1>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="item">
+          <div class="img position-relative">
+            <img class="w-100 position-absolute" src="img/Frame 48.png" alt="">
+            <div class="bg-img position-absolute"></div>
+            <ul class="social position-absolute d-flex justify-content-center w-100">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <h1>ELIOT STONE</h1>
+          <h6>Nhà sáng lập</h6>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="item">
+          <div class="img position-relative">
+            <img class="w-100 position-absolute" src="img/Personnel image 4483.jpeg" alt="">
+            <div class="bg-img position-absolute"></div>
+            <ul class="social position-absolute d-flex justify-content-center w-100">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <h1>ELIOT STONE</h1>
+          <h6>Nhà sáng lập</h6>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="item">
+          <div class="img position-relative">
+            <img class="w-100 position-absolute" src="img/Frame 45.png" alt="">
+            <div class="bg-img position-absolute"></div>
+            <ul class="social position-absolute d-flex justify-content-center w-100">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <h1>ELIOT STONE</h1>
+          <h6>Nhà sáng lập</h6>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="item">
+          <div class="img position-relative">
+            <img class="w-100 position-absolute" src="img/Frame 44.png" alt="">
+            <div class="bg-img position-absolute"></div>
+            <ul class="social position-absolute d-flex justify-content-center w-100">
+              <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <h1>ELIOT STONE</h1>
+          <h6>Nhà sáng lập</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-footer-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-12 my-2 order-1">
+          <div class="email d-flex align-items-center">
+            <img src="img/email.png" alt="" />
+            <div class="content ms-2">
+              <h1>Theo dõi bản tin</h1>
+              <p>Nhận các ưu đãi, cập nhật mới nhất</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12 my-2 order-lg-2 order-3">
+          <div class="input d-flex">
+            <input type="text" placeholder="nhập email của bạn" />
+            <button id="button">Đăng ký</button>
+          </div>
+        </div>
+        <div class="social-footer col-lg-3 col-12 my-2 order-lg-3 order-2 d-flex justify-content-end">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid d-flex bg-footer">
+    <div class="container footer">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 info">
+          <div class="d-flex" id="logo">
+            <img src="./img/logo-b_1 1.png" alt="">
+            <p>IRENE</p>
+          </div>
+          <ul class="mt-3">
+            <li class="mb-2">
+              <a class="email">support@example.com</a>
+            </li>
+            <li>
+              <a class="phone">+ (2003) 1818 1111</a>
+            </li>
+          </ul>
+          <p>18 Đ. Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
+          <img src="img/pay.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 account">
+          <span>Thông tin và chính sách</span>
+          <ul class="mt-3">
+            <li>
+              <a href="#">Liên hệ</a>
+            </li>
+            <li>
+              <a href="#">Thông tin tài khoản</a>
+            </li>
+            <li>
+              <a href="#">Tra cứu hoá đơn điện tử</a>
+            </li>
+            <li>
+              <a href="#">Tra cứu đơn hàng</a>
+            </li>
+            <li>
+              <a href="#">Thông tin vận chuyển</a>
+            </li>
+            <li>
+              <a href="#">Chính sách giao hàng</a>
+            </li>
+            <li>
+              <a href="#">Câu hỏi thường gặp</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 our-services">
+          <span>Dịch vụ</span>
+          <ul class="mt-3">
+            <li>
+              <a href="#">Chi nhánh</a>
+            </li>
+            <li>
+              <a href="#">Mua hàng và thanh toán Online</a>
+            </li>
+            <li>
+              <a href="#">Mua hàng trả góp Online</a>
+            </li>
+            <li>
+              <a href="#">Dịch vụ bảo hành</a>
+            </li>
+            <li>
+              <a href="#">Ưu đãi thanh toán</a>
+            </li>
+            <li>
+              <a href="#">Vận chuyển & Trả hàng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 Download">
+          <span>Tải ứng dụng</span>
+          <p class="mt-3">
+            Ứng dụng hiện đã có trên Google Play & App Store. Tải về ngay.
+          </p>
+          <ul class="d-flex mt-4 img-app">
+            <li><img src="img/app-01.png" alt="" /></li>
+            <li><img src="img/app-02.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="copyright">
+    Copyright © 2023 Irene – All Rights Reserved.
+  </div>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/style.js"></script>
+  <script>
+    particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+  </script>
+</body>
+
+</html>

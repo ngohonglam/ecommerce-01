@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>demo-ecommerce</title>
+  <meta name="viewport" content="width=devie-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+  <div id="header">
+    <div class="container-fluid header-top">
+      <div class="container d-flex justify-content-between">
+        <div class="header-top-left d-flex align-items-center">
+          <h6>Ngôn ngữ</h6>
+          <div class="dropdown">
+            <a class="dropbtn">Anh<i class="fa-solid fa-angle-down"></i></a>
+            <div class="dropdown-content">
+              <a href="#">Pháp</a>
+              <a href="#">Trung Quốc</a>
+              <a href="#">Bồ Đào Nha</a>
+            </div>
+          </div>
+        </div>
+        <ul class="header-top-right d-flex">
+          <ul class="phone d-flex">
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><a href="#">0123.456.789</a></li>
+          </ul>
+          <ul class="mail d-flex">
+            <li><i class="fa-solid fa-envelope"></i></li>
+            <li><a href="#">support@example.com</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <div class="container top-nav">
+      <div class="row d-flex align-items-center">
+        <div class="col-3 d-flex" id="logo">
+          <img src="./img/logo-b_1 1.png" alt="" />
+          <p>IRENE</p>
+        </div>
+        <div class="col-6 p-0 nav-search">
+          <ul class="d-flex m-0 position-relative">
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Danh mục
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Điện thoại, Tablets</a></li>
+                  <li><a class="dropdown-item" href="#">Laptop</a></li>
+                  <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
+                  <li><a class="dropdown-item" href="#">Máy ảnh</a></li>
+                  <li><a class="dropdown-item" href="#">Âm thanh</a></li>
+                  <li><a class="dropdown-item" href="#">Tivi</a></li>
+                  <li><a class="dropdown-item" href="#">PC, Màn hình</a></li>
+                  <li><a class="dropdown-item" href="#">Gia dụng</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li><span>|</span></li>
+            <li><input type="text" placeholder="Bạn tìm gì..." /></li>
+            <li class="btn position-absolute">
+              <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 nav-right-t d-flex">
+          <ul class="d-flex h-full justify-end items-center">
+            <li class="login">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                  class="fa-solid fa-unlock-keyhole"></i>
+              </button>
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <label class="d-flex">Username or email address</label>
+                        <input class="w3-input w3-border" name="first" type="text">
+                      </div>
+                      <div>
+                        <label class="d-flex">Password </label>
+                        <input class="w3-input w3-border" name="first" type="text">
+                      </div>
+                      <div class="w3-check">
+                        <input type="checkbox" checked="checked">
+                        <label> Remember me </label></p>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="w-100">Sign In</button>
+                      <ul class="d-flex justify-content-center">
+                        <li><a href="#"><i class="fa-solid fa-key"></i>Lost your password?</a></li>
+                        <li><a href="#"><i class="fa-regular fa-user"></i>Create an account</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="heart">
+              <i class="fa-regular fa-heart"></i>
+              <div class="tag">2</div>
+            </li>
+            <li class="shoppin">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <div class="tag">2</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="navbar container">
+      <div class="row align-items-center">
+        <div class="col-3 navbar-left">
+          <div class="dropdown d-flex align-items-center justify-content-between w-100">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bars"></i>
+              <p>Toàn bộ sản phẩm</p>
+            </div>
+            <i class="fa-solid fa-angle-down"></i>
+            <div class="dropdown-content">
+              <ul>
+                <li><a class="item" href="#"><img src="img/hot-sale.png" alt="">Khuyến mại</a></li>
+                <li> <a class="item" href="#"><img src="img/badge.png" alt="">Top bán chạy</a></li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Điện thoại & Tablets</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="bg-item-tablets">
+                      <div class="d-flex">
+                        <ul class="col-6">
+                          <li class="title">Điện thoại</li>
+                          <li><a href="#">Điện thoại Android</a></li>
+                          <li><a href="#">Điện thoại iPhone</a></li>
+                          <li><a href="#">Điện thoại Windows</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện điện thoại</li>
+                            <li><a href="#">Ốp điện thoại</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="col-6">
+                          <li class="title">Tablets</li>
+                          <li><a href="#">Tablets Android</a></li>
+                          <li><a href="#">iPad</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện Tablets</li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Laptop</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="d-flex item-laptop">
+                      <ul class="col-6">
+                        <li class="title">Laptop</li>
+                        <li class="sub-title">Kích thước màn hình</li>
+                        <li><a href="#">Laptop 12 inch</a></li>
+                        <li><a href="#">Laptop 13 inch</a></li>
+                        <li><a href="#">Laptop 14 inch</a></li>
+                        <li><a href="#">Laptop 15.6 inch</a></li>
+                        <li><a href="#">Laptop 16 inch</a></li>
+                        <ul class="sub">
+                          <li class="sub-title">Loại chip</li>
+                          <li><a href="#">Laptop core i3</a></li>
+                          <li><a href="#">Laptop core i5</a></li>
+                          <li><a href="#">Laptop core i7</a></li>
+                          <li><a href="#">Laptop core i9</a></li>
+
+                        </ul>
+                      </ul>
+                      <ul class="col-6 bg-item-laptop position-relative">
+                        <div class="content position-absolute">
+                          <p>Sắp ra mắt</p>
+                          <h5>MacBook pro<br> 17 inch</h5>
+                          <button id="button">mua ngay</button>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li><a class="item" href="#"><img src="img/laptop.png" alt="">Laptop</a></li> -->
+                <li><a class="item" href="#"><img src="img/smartwatch.png" alt="">Đồng hồ</a></li>
+                <li class="sub-dropdown d-flex align-items-center justify-content-between">
+                  <a class="item" href="#"><img src="img/device.png" alt="">Máy ảnh</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <div class="sub-dropdown-content">
+                    <div class="bg-item-camera">
+                      <div class="d-flex">
+                        <ul class="col-6">
+                          <li class="title">Điện thoại</li>
+                          <li><a href="#">Điện thoại Android</a></li>
+                          <li><a href="#">Điện thoại iPhone</a></li>
+                          <li><a href="#">Điện thoại Windows</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện điện thoại</li>
+                            <li><a href="#">Ốp điện thoại</a></li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                        <ul class="col-6">
+                          <li class="title">Tablets</li>
+                          <li><a href="#">Tablets Android</a></li>
+                          <li><a href="#">iPad</a></li>
+                          <ul class="sub">
+                            <li class="sub-title">Phụ kiện Tablets</li>
+                            <li><a href="#">Kính cường lực</a></li>
+                            <li><a href="#">Dây sạc</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li><a class="item" href="#"><img src="img/camera.png" alt="">Máy ảnh</a></li> -->
+                <li><a class="item" href="#"><img src="img/headphones.png" alt="">Âm thanh</a></li>
+                <li><a class="item" href="#"><img src="img/television.png" alt="">Tivi</a></li>
+                <li><a class="item" href="#"><img src="img/computer.png" alt="">PC, Màn hình</a></li>
+                <li><a class="item" href="#"><img src="img/home-appliance.png" alt="">Gia dụng</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-3 navbar-link">
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <div class="d-flex" id="logo">
+                  <img src="./img/logo-b_1 1.png" alt="">
+                  <p>IRENE</p>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body justify-content-center">
+                <div class="nav-search">
+                  <ul class="d-flex m-0 position-relative">
+                    <li><input type="text" placeholder="Bạn tìm gì..."></li>
+                    <li class="btn position-absolute">
+                      <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content">
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="./index.html" class="nav-link active">Trang chủ</a></li>
+                    <li class="nav-item"><a href="./shop.html" class="nav-link">Sản phẩm</a></li>
+                    <li class="nav-item"><a href="./blog.html" class="nav-link">Blogs</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Liên hệ</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">Giới thiệu</a></li>
+                  </ul>
+                  <div class="header-mobile-bottom">
+                    <aside class="widget_block">
+                      <div>
+                        <img src="img/sale.png" alt="">
+                        <strong>HOTLINE <span class="text-theme">(2003) 1818 1111</span></strong>
+                      </div>
+                    </aside>
+                    <aside class="widget_block-2">
+                      <p>18 Đ. Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
+                    </aside>
+                    <aside class="widget_goal_socials_widget">
+                      <div class="social-footer col-lg-3 col-12 my-2 order-lg-3 order-2 d-flex justify-content-end">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      </div>
+                    </aside>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-6 d-flex" id="logo">
+          <img src="./img/logo-b_1 1.png" alt="">
+          <p>IRENE</p>
+        </div>
+        <div class="col-3 nav-right-t d-flex">
+          <div class="d-flex login justify-content-end">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-unlock-keyhole"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <label class="d-flex">Username or email address</label>
+                      <input class="w3-input w3-border" name="first" type="text">
+                    </div>
+                    <div>
+                      <label class="d-flex">Password </label>
+                      <input class="w3-input w3-border" name="first" type="text">
+                    </div>
+                    <div class="w3-check">
+                      <input type="checkbox" checked="checked">
+                      <label> Remember me </label>
+                      <p></p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="w-100">Sign In</button>
+                    <ul class="d-flex justify-content-center">
+                      <li><a href="#"><i class="fa-solid fa-key"></i>Lost your password?</a></li>
+                      <li><a href="#"><i class="fa-regular fa-user"></i>Create an account</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex navbar-right">
+          <img src="img/discount.png" alt="">
+          <p>Giảm giá 50% tất cả sản phẩm</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner container-fluid">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <div class="item bg-banner-1">
+            <div class="container">
+              <div class="row">
+                <div class="content col-6">
+                  <h5>Sắp ra mắt</h5>
+                  <h1>Xiaomi<br> TV A Pro Series</h1>
+                  <h4>Màn hình sắc nét 4K - Công nghệ Dolby Vision</h4>
+                  <p>Muôn góc nhìn, vạn chải nghiệm</p>
+                  <button id="button">Xem ngay</button>
+                </div>
+                <div class="col-6 img d-flex justify-content-end">
+                  <img src="./img/h1-slider-03-img.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <div class="item bg-banner-2">
+            <div class="container">
+              <div class="row">
+                <div class="content col-6">
+                  <h5>Sắp ra mắt</h5>
+                  <h1>Xiaomi<br> TV A Pro Series</h1>
+                  <h4>Màn hình sắc nét 4K - Công nghệ Dolby Vision</h4>
+                  <p>Muôn góc nhìn, vạn chải nghiệm</p>
+                  <button id="button">Xem ngay</button>
+                </div>
+                <div class="col-6 img d-flex justify-content-end">
+                  <img src="./img/h1-slider-01-img01.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container products my-5">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 item d-flex">
+        <div class="col-5 img-left overflow-hidden">
+          <img class="w-100" src="img/p-07-4-410x410.jpeg" alt="">
+        </div>
+        <div class="col-7 info-right">
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <a href="./pro-detail.html" class="name">Vifa Helsinki Dusty Rose Front</a>
+          <p class="price">$130.00</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item d-flex">
+        <div class="col-5 img-left overflow-hidden">
+          <img class="w-100" src="img/p-09-410x410.jpeg" alt="">
+        </div>
+        <div class="col-7 info-right">
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <a href="./pro-detail.html" class="name">Laptop Lenovo Ideapad</a>
+          <p class="price">$134.00</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item d-flex">
+        <div class="col-5 img-left overflow-hidden">
+          <img class="w-100" src="img/p-13-2-410x410.jpeg" alt="">
+        </div>
+        <div class="col-7 info-right">
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+          </div>
+          <a href="./pro-detail.html" class="name">Foot Portable Mini Washing Machine</a>
+          <p class="price">$167.00</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item d-flex">
+        <div class="col-5 img-left overflow-hidden">
+          <img class="w-100" src="img/p-10-410x410.jpeg" alt="">
+        </div>
+        <div class="col-7 info-right">
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <a href="./pro-detail.html" class="name">JBL Everest 710 Gun Metal Front</a>
+          <p class="price">$169.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-body d-flex align-items-center py-5">
+    <div class="container ">
+      <div class="d-flex justify-content-between sub-banner">
+        <div class="item">
+          <div class="bg-sub-banner-1 position-relative">
+            <img class="w-100" src="img/h1-banner-01.jpg" alt="">
+            <div class="content position-absolute">
+              <h5>số lượng có hạn</h5>
+              <h1 class="w-100">Điện thoại <br> tầm trung giá rẻ</h1>
+              <p>Chỉ từ:<strong>$199.99</strong></p>
+              <button id="button">mua ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="bg-sub-banner-1 item-2 position-relative">
+            <img class="w-100" src="img/Frame 3.png" alt="">
+            <div class="content position-absolute">
+              <h5>hot sale</h5>
+              <h1>Wireless <br> Bluetooth 5.0</h1>
+              <p>Chỉ áp dụng tại chi nhánh Hà Nội*</p>
+              <button id="button">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container dealoftheday-pr py-5">
+    <div class="row">
+      <div class="d-flex align-items-center">
+        <h1 class="section-title mb-4 p-0">Ưu đãi trong ngày</h1>
+        <p id="timer"></p>
+      </div>
+      <div class="pr d-flex justify-content-between p-0">
+        <div class="item">
+          <div class="col-4 img-left overflow-hidden position-relative">
+            <img class="w-100" src="img/p-07-4-410x410.jpeg" alt="">
+            <button class="position-absolute button" id="button">thêm vào giỏ hàng</button>
+          </div>
+          <div class="col-8 content">
+            <p>Âm thanh</p>
+            <a href="./pro-detail.html">
+              <h1>Vifa Helsinki Dusty Rose Front</h1>
+            </a>
+            <div class="star-rating">
+              <i class="active fa-solid fa-star"></i>
+              <i class="active fa-solid fa-star"></i>
+              <i class="active fa-solid fa-star"></i>
+              <i class="active fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+            <div class="progress-bar">
+              <div class="available"></div>
+            </div>
+            <ul class="d-flex available-sold justify-content-between">
+              <li>Có sẵn: 5</li>
+              <li>Đã bán: 10</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="col-4 img-left overflow-hidden position-relative">
+            <img class="w-100" src="img/p-10-410x410.jpeg" alt="">
+            <button class="position-absolute button" id="button">thêm vào giỏ hàng</button>
+          </div>
+          <div class="col-8 content">
+            <p>Âm thanh</p>
+            <a href="./pro-detail.html">
+              <h1>JBL Everest 710 Gun Metal Front</h1>
+            </a>
+            <div class="star-rating">
+              <i class="active fa-solid fa-star"></i>
+              <i class="active fa-solid fa-star"></i>
+              <i class="active fa-solid fa-star"></i>
+              <i class="active fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+            <div class="progress-bar">
+              <div class="available"></div>
+            </div>
+            <ul class="d-flex available-sold justify-content-between">
+              <li>Có sẵn: 5</li>
+              <li>Đã bán: 10</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container top-selling-pr py-5">
+    <h1 class="section-title mb-4">Sản phẩm bán chạy</h1>
+    <div class="row w3-container m-0">
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-14-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>Microwave oven With Display</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-13-2-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>Foot Portable Mini Washing Machine</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-11-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute">-10%</p>
+        <div class="content position-absolute">
+          <p>Đồng hồ</p>
+          <a href="./pro-detail.html">
+            <h1>Đồng hồ thông minh Realme Watch 2</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-09-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Laptop</p>
+          <a href="./pro-detail.html">
+            <h1>Laptop Lenovo Ideapad</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-body sub-banner-2 py-5">
+    <div class="container">
+      <div class="row position-relative overflow-hidden">
+        <img class="p-0" src="img/h1-banner-03.jpg" alt="">
+        <div class="content d-flex position-absolute">
+          <div class="content-left">
+            <p>nhập mã</p>
+            <h1>tangngay50</h1>
+          </div>
+          <div class="content-right">
+            <h1>giảm ngay $50</h1>
+            <p>áp dụng cho sản phẩm điện thoại & taplets</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container offers-pr py-5">
+    <h1 class="section-title mb-4">Ưu đãi nổi bật</h1>
+    <div class="row w3-container m-0">
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 6.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Máy ảnh</p>
+          <a href="./pro-detail.html">
+            <h1>Máy ảnh Canon EOS 2000D Kit EF-S18-55mm F3.5-5.6 III</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-13-2-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>Foot Portable Mini Washing Machine</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-07-4-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute ">-10%</p>
+        <div class="content position-absolute">
+          <p>Âm thanh</p>
+          <a href="./pro-detail.html">
+            <h1>Vifa Helsinki Dusty Rose Front</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 item position-relative">
+        <a href="./pro-detail.html" class="img ">
+          <img src="img/p-09-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Laptop</p>
+          <a href="./pro-detail.html">
+            <h1>Laptop Lenovo Ideapad</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-marquee">
+    <div class="container marquee">
+      <div class="d-flex">
+        <span class="span1">Tải ứng dụng của chúng tôi ngay! Đừng bỏ lỡ các ưu đãi và mua sắm ngay với thẻ Visa.</span>
+        <span class="span2">Tải ứng dụng của chúng tôi ngay! Đừng bỏ lỡ các ưu đãi và mua sắm ngay với thẻ Visa.</span>
+        <span class="span3">Tải ứng dụng của chúng tôi ngay! Đừng bỏ lỡ các ưu đãi và mua sắm ngay với thẻ Visa.</span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-body py-5">
+    <div class="container ">
+      <div class="d-flex justify-content-between sub-banner">
+        <div class="item sub-2">
+          <div class="bg-sub-banner-1 position-relative">
+            <img class="w-100" src="img/banner-camera.png" alt="">
+            <div class="content position-absolute">
+              <h5>GIẢM 25%</h5>
+              <h1>Máy ảnh</h1>
+              <button id="button">mua ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="item sub-2">
+          <div class="bg-sub-banner-1 position-relative">
+            <img class="w-100" src="img/h1-banner-05.jpg" alt="">
+            <div class="content position-absolute">
+              <h5>GIẢM 35%</h5>
+              <h1>Laptop & PC</h1>
+              <button id="button">mua ngay</button>
+            </div>
+          </div>
+        </div>
+        <div class="item sub-2">
+          <div class="bg-sub-banner-1 position-relative">
+            <img class="w-100" src="img/h1-banner-06.jpg" alt="">
+            <div class="content position-absolute">
+              <h5>GIẢM 45%</h5>
+              <h1>Smart Watches</h1>
+              <button id="button">mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container featured-pr py-5 mt-4">
+    <div class="">
+      <h1 class="section-title">Sản phẩm nổi bật</h1>
+      <div class="w3-bar w3-black mb-4 pb-2 mt-2">
+        <div class="btn-lg">
+          <button class="w3-bar-item w3-button tablink color" onclick="openCity(event,'tab1')">Điện thoại &
+            Tablets</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab2')">
+            Laptop
+          </button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab3')">
+            PC & Màn hình
+          </button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab4')">
+            Đồng hồ
+          </button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab5')">
+            Máy ảnh
+          </button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab6')">
+            Âm thanh
+          </button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'tab7')">
+            Gia dụng
+          </button>
+        </div>
+        <div class="btn-md-sm">
+          <div class="d-flex">
+            <img src="img/catalog.png" alt="">
+            <select onchange="openCity(event,value)">
+              <option value="tab1" class="w3-bar-item w3-button">
+                Điện thoại &amp; Tablets</option>
+              <option value="tab2" class="w3-bar-item w3-button">
+                Laptop</option>
+              <option value="tab3" class="w3-bar-item w3-button">
+                PC &amp; Màn hình
+              </option>
+              <option value="tab4" class="w3-bar-item w3-button">
+                Đồng hồ
+              </option>
+              <option value="tab5" class="w3-bar-item w3-button">
+                Máy ảnh
+              </option>
+              <option value="tab6" class="w3-bar-item w3-button">
+                Âm thanh
+              </option>
+              <option value="tab7" class="w3-bar-item w3-button">
+                Gia dụng
+              </option>
+            </select>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tab1" class="row w3-container city m-0">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-08-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Xiaomi Redmi Note 10 Pro</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-06-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Apple iPad Pro 10.5-inch Cellular 64G</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-08-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Xiaomi Redmi Note 10 Pro</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-06-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Apple iPad Pro 10.5-inch Cellular 64G</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-08-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Xiaomi Redmi Note 10 Pro</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-06-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Apple iPad Pro 10.5-inch Cellular 64G</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-08-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Xiaomi Redmi Note 10 Pro</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-06-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Điện thoại &
+            Tablets</p>
+          <a href="./pro-detail.html">
+            <h1>Apple iPad Pro 10.5-inch Cellular 64G</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+    <div id="tab2" class="row w3-container city m-0" style="display: none;">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-09-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Laptop</p>
+          <a href="./pro-detail.html">
+            <h1>Laptop Lenovo Ideapad</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/macbook-pro-2021-06.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Laptop</p>
+          <a href="./pro-detail.html">
+            <h1>Macbook Pro 14 inch 2021</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-09-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Laptop</p>
+          <a href="./pro-detail.html">
+            <h1>Laptop Lenovo Ideapad</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/macbook-pro-2021-06.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Laptop</p>
+          <a href="./pro-detail.html">
+            <h1>Macbook Pro 14 inch 2021</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+    <div id="tab3" class="row w3-container city m-0" style="display: none;">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 4.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>PC & Màn hình</p>
+          <a href="./pro-detail.html">
+            <h1>Màn hình Samsung LS24R350FZEXXV 23.8</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 5.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>PC & Màn hình</p>
+          <a href="./pro-detail.html">
+            <h1>PC CPS Gaming G5</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 4.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>PC & Màn hình</p>
+          <a href="./pro-detail.html">
+            <h1>Màn hình Samsung LS24R350FZEXXV 23.8</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 5.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>PC & Màn hình</p>
+          <a href="./pro-detail.html">
+            <h1>PC CPS Gaming G5</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+    <div id="tab4" class="row w3-container city m-0" style="display: none;">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 3.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Đồng hồ</p>
+          <a href="./pro-detail.html">
+            <h1>Đồng hồ định vị trẻ em myFirst Fone R1</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-11-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute">-10%</p>
+        <div class="content position-absolute">
+          <p>Đồng hồ</p>
+          <a href="./pro-detail.html">
+            <h1>Đồng hồ thông minh Realme Watch 2</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 3.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Đồng hồ</p>
+          <a href="./pro-detail.html">
+            <h1>Đồng hồ định vị trẻ em myFirst Fone R1</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-11-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute">-10%</p>
+        <div class="content position-absolute">
+          <p>Đồng hồ</p>
+          <a href="./pro-detail.html">
+            <h1>Đồng hồ thông minh Realme Watch 2</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+    <div id="tab5" class="row w3-container city m-0" style="display: none;">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 6.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Máy ảnh</p>
+          <a href="./pro-detail.html">
+            <h1>Máy ảnh Canon EOS 2000D Kit EF-S18-55mm F3.5-5.6 III</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 7.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute">-10%</p>
+        <div class="content position-absolute">
+          <p>Máy ảnh</p>
+          <a href="./pro-detail.html">
+            <h1>Máy ảnh Fujifilm X-T30 Mark II Kit XC15-45mm F3.5.5.6 OIS PZ</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 6.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Máy ảnh</p>
+          <a href="./pro-detail.html">
+            <h1>Máy ảnh Canon EOS 2000D Kit EF-S18-55mm F3.5-5.6 III</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Group 7.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute">-10%</p>
+        <div class="content position-absolute">
+          <p>Máy ảnh</p>
+          <a href="./pro-detail.html">
+            <h1>Máy ảnh Fujifilm X-T30 Mark II Kit XC15-45mm F3.5.5.6 OIS PZ</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+    <div id="tab6" class="row w3-container city m-0" style="display: none;">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Frame 5.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Âm thanh</p>
+          <a href="./pro-detail.html">
+            <h1>Tai nghe Bluetooth Apple AirPods 3 2022</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Frame 6.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Âm thanh</p>
+          <a href="./pro-detail.html">
+            <h1>Âm thanh Fujifilm X-T30 Mark II Kit XC15-45mm F3.5.5.6 OIS PZ</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Frame 5.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Âm thanh</p>
+          <a href="./pro-detail.html">
+            <h1>Tai nghe Bluetooth Apple AirPods 3 2022</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/Frame 6.png" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Âm thanh</p>
+          <a href="./pro-detail.html">
+            <h1>Âm thanh Fujifilm X-T30 Mark II Kit XC15-45mm F3.5.5.6 OIS PZ</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+    <div id="tab7" class="row w3-container city m-0" style="display: none;">
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-14-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>Microwave oven With Display</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-02-2-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>4K UHD LED Smart TV</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-14-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>Microwave oven With Display</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old d-none">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 item position-relative">
+        <a href="./pro-detail.html" class="img">
+          <img src="img/p-02-2-410x410.jpeg" alt="">
+        </a>
+        <p class="out-of-stock position-absolute d-none">SOLD OUT</p>
+        <p class="tag-discount position-absolute d-none">-10%</p>
+        <div class="content position-absolute">
+          <p>Gia dụng</p>
+          <a href="./pro-detail.html">
+            <h1>4K UHD LED Smart TV</h1>
+          </a>
+          <div class="star-rating">
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="active fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="price"><span class="price-old">$246.00</span>$130.00</p>
+          <button id="button">thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-5 bg-footer-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-12 my-2 order-1">
+          <div class="email d-flex align-items-center">
+            <img src="img/email.png" alt="" />
+            <div class="content ms-2">
+              <h1>Theo dõi bản tin</h1>
+              <p>Nhận các ưu đãi, cập nhật mới nhất</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12 my-2 order-lg-2 order-3">
+          <div class="input d-flex">
+            <input type="text" placeholder="nhập email của bạn" />
+            <button id="button">Đăng ký</button>
+          </div>
+        </div>
+        <div class="social-footer col-lg-3 col-12 my-2 order-lg-3 order-2 d-flex justify-content-end">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid d-flex bg-footer">
+    <div class="container footer">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 info">
+          <div class="d-flex" id="logo">
+            <img src="./img/logo-b_1 1.png" alt="">
+            <p>IRENE</p>
+          </div>
+          <ul class="mt-3">
+            <li class="mb-2">
+              <a class="email">support@example.com</a>
+            </li>
+            <li>
+              <a class="phone">+ (2003) 1818 1111</a>
+            </li>
+          </ul>
+          <p>18 Đ. Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội, Việt Nam</p>
+          <img src="img/pay.png" alt="">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 account">
+          <span>Thông tin và chính sách</span>
+          <ul class="mt-3">
+            <li>
+              <a href="#">Liên hệ</a>
+            </li>
+            <li>
+              <a href="#">Thông tin tài khoản</a>
+            </li>
+            <li>
+              <a href="#">Tra cứu hoá đơn điện tử</a>
+            </li>
+            <li>
+              <a href="#">Tra cứu đơn hàng</a>
+            </li>
+            <li>
+              <a href="#">Thông tin vận chuyển</a>
+            </li>
+            <li>
+              <a href="#">Chính sách giao hàng</a>
+            </li>
+            <li>
+              <a href="#">Câu hỏi thường gặp</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 our-services">
+          <span>Dịch vụ</span>
+          <ul class="mt-3">
+            <li>
+              <a href="#">Chi nhánh</a>
+            </li>
+            <li>
+              <a href="#">Mua hàng và thanh toán Online</a>
+            </li>
+            <li>
+              <a href="#">Mua hàng trả góp Online</a>
+            </li>
+            <li>
+              <a href="#">Dịch vụ bảo hành</a>
+            </li>
+            <li>
+              <a href="#">Ưu đãi thanh toán</a>
+            </li>
+            <li>
+              <a href="#">Vận chuyển & Trả hàng</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 Download">
+          <span>Tải ứng dụng</span>
+          <p class="mt-3">
+            Ứng dụng hiện đã có trên Google Play & App Store. Tải về ngay.
+          </p>
+          <ul class="d-flex mt-4 img-app">
+            <li><img src="img/app-01.png" alt="" /></li>
+            <li><img src="img/app-02.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="copyright">
+    Copyright © 2023 Irene – All Rights Reserved.
+  </div>
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/style.js"></script>
+</body>
+
+</html>
